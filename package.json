@@ -1,0 +1,66 @@
+{
+  "name": "hostic",
+  "version": "0.15.5",
+  "description": "Yet another static web site generator",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "jest --no-cache",
+    "prepublish": "npm test",
+    "format": "prettier --write ."
+  },
+  "author": {
+    "name": "devmastery",
+    "email": "devmastery@outlook.com"
+  },
+  "repository": {
+    "type": "git"  },
+  "license": "EUPL-1.2",
+  "jest": {
+    "transform": {
+      "^.+\\.jsx?$": "./src/jest-transform.js"
+    },
+    "testEnvironment": "node",
+    "testPathIgnorePatterns": [
+      "node_modules/",
+      "dist/"
+    ]
+  },
+  "bin": {
+    "hostic": "src/cli.js"
+  },
+  "bugs": {
+    "url": "https://github.com/devmastery/hostic/issues"
+  },
+  "funding": {
+    "type": "GitHub Sponsors ❤",
+    "url": "https://github.com/sponsors/devmastery"
+  },
+  "homepage": "https://github.com/devmastery/hostic",
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "chokidar": "^3.5.2",
+    "debug": "^4.3.2",
+    "esbuild": "^0.13.8",
+    "express": "^4.17.1",
+    "highlight.js": "^11.3.1",
+    "image-size": "^1.0.0",
+    "marked": "^3.0.7",
+    "mime-types": "^2.1.33",
+    "minimatch": "^3.0.4",
+    "postcss": "^8.3.9",
+    "postcss-load-config": "^3.1.0",
+    "socket.io": "^4.3.1",
+    "socket.io-client": "^4.3.2",
+    "source-map-support": "^0.5.20",
+    "uuid": "^8.3.2",
+    "yaml": "^1.10.2",
+    "zeed-dom": "^0.9.11"
+  },
+  "devDependencies": {
+    "jest": "^27.3.0",
+    "prettier": "^2.4.1"
+  },
+  "engines": {
+    "node": ">=12"
+  }
+}
